@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Play 2D matrices</title>
+    <link rel="stylesheet" href="linear.css" />
+  </head>
+  <body>
+    <canvas id="normalGridC"></canvas>
+    <canvas id="artC"></canvas>
+    <canvas id="traceC"></canvas>
+    <canvas id="slantGrid"></canvas>
+    <canvas id="vectorC"></canvas>
+    <canvas id="textC"></canvas>
+
+    <div class="vector_container">
+      <span>Enter your vector</span>
+      <input type="number" value="1" />
+      <input type="number" value="1" />
+      <button class="takeVector">Start</button>
+    </div>
+    <div class="controls">
+      <span>Zoom <input class="zoom" type="range" max="200" min="10" /></span>
+
+      <div class="matrix_container">
+        <span> 2x2 matrix</span>
+        <div>
+          <input type="number" value="1" />
+          <input type="number" value="0" />
+        </div>
+        <div>
+          <input type="number" value="0" />
+          <input type="number" value="1" />
+        </div>
+      </div>
+      <div class="button_container">
+        <button class="go">Go</button>
+        <button class="back">Back</button>
+      </div>
+    </div>
+    <script src="canvasSetUp.js"></script>
+    <script src="vectorOperations.js"></script>
+    <script src="linear.js"></script>
+    <script src="event.js"></script>
+  </body>
+</html>

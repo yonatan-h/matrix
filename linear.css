@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+}
+canvas {
+  position: absolute;
+}
+#traceC {
+  opacity: 0.3;
+}
+#slantGrid {
+  opacity: 0.3;
+}
+#normalGridC {
+  opacity: 1;
+}
+
+input[type="number"] {
+  background-color: white; /* incase of mobiles who dont have a default back-ground color*/
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.vector_container,
+.controls {
+  background-color: purple;
+  color: white;
+  box-shadow: 2px 2px black;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vector_container {
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  right: 1rem;
+  bottom: 1rem;
+}
+.matrix_container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.matrix_container > div > input,
+.vector_container > input {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.25rem;
+}
+button {
+  margin: 0.5rem;
+  color: white;
+  padding: 5px;
+}
+.go {
+  background: green;
+  border-radius: 100%;
+}
+.back {
+  background: red;
+}
+.takeVector {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.controls {
+  display: none;
+}
+.switchOn {
+  display: flex;
+}
+.switchOff {
+  display: none;
+}
